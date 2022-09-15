@@ -9,7 +9,10 @@ import org.springframework.stereotype.Service;
 import com.payementscolaritehei.payementscolaritehei.model.Student;
 import com.payementscolaritehei.payementscolaritehei.repository.StudentRepository;
 
+import Lombok.AllArgsConstructor
+
 @Service
+@AllArgsConstructor
 public class StudentService {
     @Autowired
     private StudentRepository studentRepository;
