@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.payementscolaritehei.payementscolaritehei.repository.EcolageRepository;
+
+import lombok.AllArgsConstructor;
+
 import com.payementscolaritehei.payementscolaritehei.model.Ecolage;
-
-import Lombok.AllArgsConstructor
-
 
 @Service
 @AllArgsConstructor
@@ -31,6 +31,6 @@ public class EcolageService {
    }
 
    public void deleteEcolage(Integer id){
-      return ecolageRepository.deleteById(id);
+      ecolageRepository.deleteById(id);
    }
 }

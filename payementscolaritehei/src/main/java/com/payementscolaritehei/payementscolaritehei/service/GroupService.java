@@ -7,9 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.payementscolaritehei.payementscolaritehei.repository.GroupRepository;
-import com.payementscolaritehei.payementscolaritehei.model.Group;
 
-import Lombok.AllArgsConstructor
+import lombok.AllArgsConstructor;
+
+import com.payementscolaritehei.payementscolaritehei.model.Group;
 
 @Service
 @AllArgsConstructor
@@ -30,6 +31,6 @@ public class GroupService {
    }
 
    public void deleteGroup(Integer id){
-      return groupRepository.deleteById(id);
+      groupRepository.deleteById(id);
    }
 }

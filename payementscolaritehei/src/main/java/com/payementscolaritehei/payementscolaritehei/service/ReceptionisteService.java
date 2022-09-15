@@ -7,9 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.payementscolaritehei.payementscolaritehei.repository.ReceptionisteRepository;
-import com.payementscolaritehei.payementscolaritehei.model.Receptioniste;
 
-import Lombok.AllArgsConstructor
+import lombok.AllArgsConstructor;
+
+import com.payementscolaritehei.payementscolaritehei.model.Receptioniste;
 
 @Service
 @AllArgsConstructor
@@ -30,7 +31,7 @@ public class ReceptionisteService {
    }
 
    public void deleteReceptioniste(Integer id){
-      return receptionisteRepository.deleteById(id);
+      receptionisteRepository.deleteById(id);
    }
 
 }

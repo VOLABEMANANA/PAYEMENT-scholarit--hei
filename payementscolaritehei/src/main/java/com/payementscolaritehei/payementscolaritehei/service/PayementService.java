@@ -7,15 +7,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.payementscolaritehei.payementscolaritehei.repository.PayementRepository;
-import com.payementscolaritehei.payementscolaritehei.model.Payement;
 
-import Lombok.AllArgsConstructor
+import lombok.AllArgsConstructor;
+
+import com.payementscolaritehei.payementscolaritehei.model.Payement;
 
 @Service
 @AllArgsConstructor
 public class PayementService {
    @Autowired
-   private PayementRepository PayementRepository;
+   private PayementRepository payementRepository;
 
    public List<Payement> getAllPayements(){
       return payementRepository.findAll();
@@ -30,7 +31,7 @@ public class PayementService {
    }
 
    public void deletePayement(Integer id){
-      return payementRepository.deleteById(id);
+      payementRepository.deleteById(id);
    }
 
 }
